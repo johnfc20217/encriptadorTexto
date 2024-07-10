@@ -47,7 +47,7 @@ function encriptarMensaje(){
         mostrar(secreto);
         document.querySelector('#texto').value='';
     }
-    // mostramos un alert
+    // mostramos en un alert la sugerencia
     else alert("Por favor, Ingrese un mensaje en minúsculas y sin acentos.");
 }
 
