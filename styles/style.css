@@ -95,7 +95,6 @@ textarea:focus{
 .mensaje{
     float: right;
     background-color: var(--backgroundMensajes);
-    /*display: inline-block;*/
     text-align: center;
     width: 35%;
     height: 90%;
@@ -104,7 +103,7 @@ textarea:focus{
     padding: 30px 20px;
     box-sizing: border-box;
     border-radius: 32px;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 1s;
 }
 
@@ -192,7 +191,6 @@ textarea:focus{
     border: none;
     background-color: var(--encriptarBackground);
     border-radius: 15px;
-    /*transition: 1s all;*/
     cursor: pointer;
 }
 
@@ -208,7 +206,6 @@ textarea:focus{
     border-width: thin;
     border-color: var(--borderBoton);
     border-radius: 15px;
-    /*transition: 1s all;*/
     cursor: pointer;
 }
 

@@ -7,22 +7,21 @@
         <title>Challenge Encriptador</title>
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/style.css">
-        <link rel="icon" href="./img/alura_logo.png" type="img/icono">
-
+        <link rel="icon" href="./img/a.jpeg" type="img">
+        <!-- <link rel="stylesheet" href="./img/aluraLogo.png" type="img> -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> <!--fuentes de google-->
-       <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <img class="logo" alt="Logo letra a" src="./img/loogo.png">
+            <img class="logo" alt="Logo letra a" src="./img/a.jpeg">
         </header>
 
         <main class="container">
             <textarea 
                 class="texto"
-                name="text" 
+                name="texto" 
                 id="texto" 
                 cols="35" 
                 rows="10" 
@@ -30,29 +29,33 @@
             </textarea>
 
             <div class="mensaje" id="mensaje">
-
-                <section class="vacio" id="vacio">
-                    <h1><img src="./img/Muneco.png" alt="Imágen de mensaje no encontrado" id="imagenSinMensaje"></h1>
+                <div class="vacio" id="vacio">
+                    <h1><img src="./img/muneco.jpeg" alt="Imágen de mensaje no encontrado" id="imagenSinMensaje"></h1>
                     <h2 id="sinMensaje">Ningún mensaje se a encontrado.</h2>
                     <p id="descpripcionSinMensaje">Ingrese el texto que desea encriptar o desencriptar</p>
-                </section>
+                </div>
                 
-                <section>
-                    <textarea class="texto" name="text" id="resultado" cols="50" rows="12"></textarea>
+                <div>
+                    <textarea 
+                        class="texto"
+                        name="text" 
+                        id="resultado"   
+                        cols="60" 
+                        rows="12">
+                    </textarea>
                     <input class="copiar" type="submit" value="Copiar"  id="copiar">
-                </section>
-                
+                </div> 
             </div>
-
-            <section class="botones">
-                <p><span class="iconify" data-icon="bi:exclamation-circle-fill"></span> Solo letras minúsculas y sin acento</p>
-                <input class="encriptar" type="submit"  id="encriptar" value="Encriptar" >
+            
+            <div class="botones">
+                <p><span class="iconify" data-icon="bi:exclamation-circle-fill"></span> Solo letras minusculas y sin acento</p>
+                <input class="encriptar" type="submit"  id="encriptar" value="Encriptar">
                 <input class="desencriptar" type="submit" id="desencriptar" value="Desencriptar">
-            </section>
+            </div>
             
         </main>
         <footer>
-            <p>by john fernando cadena Encriptador</p> 
+            <p>Encriptador</p> 
         </footer>
 
     </body>
