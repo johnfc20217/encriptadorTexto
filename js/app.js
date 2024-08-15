@@ -1,84 +1,72 @@
+function encriptar(){
+    let texto = document.getElementById("texto").value;
+    let tituloMensaje = document.getElementById("titulo-mensaje");
+    let parrafo = document.getElementById("parrafo");
+    let muneco = document.getElementById("muneco");
 
-function mostrar(mensaje){
-    document.querySelector("#resultado").innerHTML=mensaje;
+
+
+    let textoCifrado = texto 
+    .replace(/e/gi, "enter")
+    .replace(/i/gi, "imes")
+    .replace(/a/gi, "ai")
+    .replace(/o/gi, "ober")
+    .replace(/u/gi, "ufat");
+
+    if (document.getElementById("texto").value.length != 0){
+    /*if (texto.length != 0){*/
+        document.getElementById("texto").value = textoCifrado;
+        tituloMensaje.textContent = "Texto encriptado con exito";
+        parrafo.textContent = "";
+        muneco.src = "./img/Encriptado.jpg";
+
+    } else {
+        muneco.src = "./img/muneco.jpeg";
+        tituloMensaje.textContent = "Ningun mensaje fue encontrado";
+        parrafo.textContent = "Ingresa el txto que deseas encriptar o desencriptar";
+        alert("Debes ingresar algun texto");
+    }
 }
 
-function actualizarPantalla(){ /**limpiar pantalla **/
-    
-    document.querySelector("#vacio").style.display="none";
-    document.querySelector("#imagenSinMensaje").style.display="none";
-    document.querySelector("#sinMensaje").style.display="none";
-    document.querySelector("#descpripcionSinMensaje").style.display="none";
-    document.querySelector("#resultado").style.display="inline-block";
-    document.querySelector("#copiar").style.display="inline-block";
-    
+function desencriptar(){
+    let texto = document.getElementById("texto").value;
+    let tituloMensaje = document.getElementById("titulo-mensaje");
+    let parrafo = document.getElementById("parrafo");
+    let muneco = document.getElementById("muneco");
+
+    let textoCifrado = texto
+    .replace(/enter/gi, "e")
+    .replace(/imes/gi, "i")
+    .replace(/ai/gi, "a")
+    .replace(/ober/gi, "o")
+    .replace(/ufat/gi, "u");
+
+    if (document.getElementById("texto").value.length != 0){
+        /*if (texto.length != 0){*/
+            document.getElementById("texto").value = textoCifrado;
+            tituloMensaje.textContent = "Texto desencriptado con exito";
+            parrafo.textContent = "";
+            muneco.src = "./img/desencriptado.jpg";
+} else {
+    muneco.src = "./img/muneco.jpeg";
+    tituloMensaje.textContent = "Ningun mensaje fue encontrado";
+    parrafo.textContent = "Ingresa el txto que deseas encriptar o desencriptar";
+    alert("Debes ingresar algun texto");
 }
-/**guia en la web https://es.stackoverflow.com/questions/510006/m%C3%A9todo-de-encriptado-en-javascript **/
-function encriptarMensaje(){
-    var mensaje = document.querySelector("#texto").value;
-    var secreto="";
-/**si mesaje es distinto realizamos and A a la Z and de la a a la u 
- * y pasamos a los casos si mensaje [i] pasa al caso a e i o u
+
+}
+/*
+HTML
+<div class= "button-container">
+    <button id="playbtn">play</button>
+    <button id="pausebtn">pause</button>
+</div>
 */
-    if(mensaje!="" && !/[A-Z]/g.test(mensaje) && !/[á-ú]/g.test(mensaje) && mensaje.trim().length){
-        for(var i=0;i<mensaje.length;i++){
-            switch(mensaje[i]){
-                case "a":
-                    secreto+="ai";
-                    break;
-                case "e":
-                    secreto+="enter";
-                    break;
-                case "i":
-                    secreto+="imes";
-                    break;
-                case "o":
-                    secreto+="ober";
-                    break;
-                case "u":
-                    secreto+="ufat";
-                    break;
-                default:
-                    secreto+=mensaje[i];
-            }
-        }
 
-        actualizarPantalla();
-        mostrar(secreto);
-        document.querySelector('#texto').value='';
-    }
-    // mostramos en un alert la sugerencia
-    else alert("Por favor, Ingrese un mensaje en minúsculas y sin acentos.");
-}
+/*
+JAVASCRIPT
+let sound = new Audio("./ruta mp3");
+playbtn.addEventListener("click"), ()=>{ sound.play()};
 
-function desencriptarMensaje(){
-    var mensaje = document.querySelector("#texto").value;
-    var codigos= [/ai/g, /enter/g, /imes/g, /ober/g, /ufat/g];
-    var letras = ['a','e','i','o','u'];
-    
-    if(mensaje!="" && !/[A-Z]/g.test(mensaje) && !/[á-ú]/g.test(mensaje) && mensaje.trim().length){
-        for(var i=0;i<5;i++){
-            mensaje=mensaje.replaceAll(codigos[i], letras[i]);
-        }
-
-        actualizarPantalla();
-        mostrar(mensaje);
-        document.querySelector('#texto').value='';
-    }
-    
-}
-
-function copiarTexto(){
-    var texto = document.querySelector("#resultado");
-    texto.select();
-    texto.setSelectionRange(0, 99999); 
-    navigator.clipboard.writeText(texto.value);
-}
-/**encriptar y desencritar */
-var encriptar = document.querySelector("#encriptar");
-var desencriptar = document.querySelector("#desencriptar");
-var copiar = document.querySelector("#copiar");
-
-copiar.onclick = copiarTexto;
-encriptar.onclick = encriptarMensaje;
-desencriptar.onclick = desencriptarMensaje;
+pausebtn.addEventLIstener("click", ()=> { sound.pause();})
+ */
