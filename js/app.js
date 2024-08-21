@@ -4,6 +4,8 @@ function encriptar(){
     let parrafo = document.getElementById("parrafo");
     let muneco = document.getElementById("muneco");
 
+    let audio1 = document.getElementById("audio-m");
+
 
 
     let textoCifrado = texto 
@@ -22,6 +24,7 @@ function encriptar(){
 
     } else {
         muneco.src = "./img/muneco.jpeg";
+        audio1.play();
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el txto que deseas encriptar o desencriptar";
         alert("Debes ingresar algun texto");
@@ -52,15 +55,27 @@ function desencriptar(){
     tituloMensaje.textContent = "Ningun mensaje fue encontrado";
     parrafo.textContent = "Ingresa el txto que deseas encriptar o desencriptar";
     alert("Debes ingresar algun texto");
+    function iniciarSonido(){
+        audio.play();
 }
 
 }
+/*let sound = new Audio("./sound/mision-imposible.mp3");*/
+/*playbtn.addEventListener("click"), ()=>{ sound.play()};*/
+}
+
 /*
 HTML
 <div class= "button-container">
     <button id="playbtn">play</button>
     <button id="pausebtn">pause</button>
 </div>
+*/
+/*
+let sound = new Audio("./sound/mision-imposible.mp3");
+playbtn.addEventListener("click"), ()=>{ sound.play()};
+
+pausebtn.addEventLIstener("click", ()=> { sound.pause();})
 */
 
 /*
