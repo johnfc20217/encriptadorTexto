@@ -2,106 +2,87 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/lock.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">    
-<title>Encriptador de texto</title>
+<title>Encriptador y Desencriptador de texto</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="./img/logo.jpeg" alt="logo alura">
-            <audio id="audio-m" src="./sound/mision-imposible.mp3" type="audio/mpeg"></audio>
+            <img class="logo" src="./img/logo.jpeg" alt="logo alura">
+            <!--<audio id="audio-m" src="./sound/mision-imposible.mp3" type="audio/mpeg"></audio>-->
         </header>
 
-        <!--
-        <div class="animation-container">
-            <div class="lightning-container">
-                <div class="lightning white"></div>
-                <div class="lightning red"></div>
-            </div>
-            <div class="boom-container">
-                <div class="shape circle big white"></div>
-                <div class="shape circle white"></div>
-                <div class="shape triangle big yellow"></div>
-                <div class="shape disc white"></div>
-                <div class="shape triangle blue"></div>
-            </div>
-            <div class="boom-container second">
-                <div class="shape circle big white"></div>
-                <div class="shape circle white"></div>
-                <div class="shape disc white"></div>
-                <div class="shape triangle blue"></div>
-            </div>
-        </div>
-        
-    <!---<div class="footer">Implemented with ❤ by <a href="https://mrossignol.fr" target="_blank">Maxime Rossignol</a> from an original idea by <a href="https://www.uplabs.com/shashanksahay" traget="_blank">Shashank Sahay</a></div>->
--->
-
         <main>
-
-        <div class="encriptar">
-            <textarea 
-                class="texto"
-                name="texto" 
-                id="texto" 
-                cols="30" 
-                rows="10" 
-                placeholder="Ingrese el texto aqui">
-            </textarea>   
-        
-        <div class="terminos">
-            <img class="ter-img" src="./img/admiracion.jpeg" alt="admiracion">
-            <p>Solo letras minusculas y sin acento</p>
-        </div>
-        
-        <div class="botones">
-            <input 
-                type="button" 
-                class="btn-encriptar" 
-                value="Encriptar" 
-                onclick="encriptar()"
-                                           
-            />
+            <div class="encriptar"> <!--texto-de-area--->
+                <textarea 
+                    class="texto" 
+                    name="texto" 
+                    id="texto" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Ingrese el texto aqui"
+                    autofocus>
+                </textarea>   
             
+            <div class="informacion"> <!--informacion--->
+                <img class="ter-img" src="./img/admiracion.jpeg" alt="admiracion">
+                <p>Solo letras minusculas y sin acento</p>
+            </div>
             
-
-            <input 
-                type="button" 
-                class="btn-desencriptar" 
-                value="Desencriptar" 
-                onclick="desencriptar()"  
-            />
-            <!--otra manera con input-->
-            <!--<button 
-                class="btn-desencriptar" 
-                type="button" 
-                onclick="desencriptar()">
-                Desencriptar
-            </button>-->
+            <div class="botones"> 
+                <input 
+                    class="btn-encriptar"
+                    type="button" 
+                    id="encriptar"
+                    value="Encriptar" 
+                    onclick="encriptar()"                                    
+                />
+                
+                <input 
+                    type="button" 
+                    class="btn-desencriptar" 
+                    id="desencriptar"
+                    value="Desencriptar" 
+                    onclick="desencriptar()"  
+                />
+                <div>
+                    <button class="btn-logout" id="logout">Logout</button>
+                </div>
+                <!--otra manera con input-->
+                <!--<button 
+                    class="btn-copiar" 
+                    type="button" 
+                    onclick="copiar()">
+                    Copiar
+                </button>-->
                          
         </div>
     </div>
 
-    <div class="encriptado">
+    <div class="encriptado"> <!--mensaje-->
         <img class="img" src="./img/muneco.jpeg" alt="muneco" id="muneco">
         <div class="mensaje-encriptado" id="mensaje-encriptado">
             <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
-            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p>
-            <audio id="audio-m" src="./sound/mision-imposible.mp3" type="audio/mp3"></audio>
+            <p id="parrafo">Ingresa el texto que desea encriptar o desencriptar.</p>
+                        
             
-                
-                
-            
+            <audio id="audio-m" src="./sound/mision-imposible.mp3" type="audio/mpeg"></audio>
+              
         </div>
     </div>
 </div>
 </main>
-    
-    
+
+
+<div>
+    <footer>Developed by jfc</footer>
+</div>
 </body>
-<script src="./js/app.js"></script>
+<script src="./js/index.js"></script>
 </html>
