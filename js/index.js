@@ -16,7 +16,7 @@ function encriptar(){
     .replace(/u/gi, "ufat");
 
     if (document.getElementById("texto").value.length != 0){
-    /*if (texto.length != 0){*/
+    
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto encriptado con exito";
         parrafo.textContent = "";
@@ -27,7 +27,7 @@ function encriptar(){
         muneco.src = "./img/muneco.jpeg";
         /*audio1.play();*/
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
-        parrafo.textContent = "Ingresa el txto que deseas encriptar o desencriptar";
+        parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         alert("Debes ingresar algun texto");
     }
 }

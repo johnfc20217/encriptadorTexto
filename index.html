@@ -13,10 +13,12 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        
+        <header class="caja-logo">
             <img class="logo" src="./img/logo.jpeg" alt="logo alura">
             <!--<audio id="audio-m" src="./sound/mision-imposible.mp3" type="audio/mpeg"></audio>-->
         </header>
+        
 
         <main>
             <div class="encriptar"> <!--texto-de-area--->
@@ -31,7 +33,7 @@
                 </textarea>   
             
             <div class="informacion"> <!--informacion--->
-                <img class="ter-img" src="./img/admiracion.jpeg" alt="admiracion">
+                <img class="img" src="./img/admiracion.jpeg" alt="admiracion">
                 <p>Solo letras minusculas y sin acento</p>
             </div>
             
@@ -51,9 +53,12 @@
                     value="Desencriptar" 
                     onclick="desencriptar()"  
                 />
-                <div>
-                    <button class="btn-logout" id="logout">Logout</button>
-                </div>
+                
+                <button 
+                    class="btn-logout" 
+                    id="logout">Logout
+                </button>
+                
                 <!--otra manera con input-->
                 <!--<button 
                     class="btn-copiar" 
@@ -66,7 +71,7 @@
     </div>
 
     <div class="encriptado"> <!--mensaje-->
-        <img class="img" src="./img/muneco.jpeg" alt="muneco" id="muneco">
+        <img class="img1" src="./img/muneco.jpeg" alt="muneco" id="muneco">
         <div class="mensaje-encriptado" id="mensaje-encriptado">
             <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
             <p id="parrafo">Ingresa el texto que desea encriptar o desencriptar.</p>

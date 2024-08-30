@@ -33,11 +33,7 @@ body {
 	/*flex-direction: row;*/
 	/*width: 100vw;*/
 	height: 100vh;
-    
-	
-	
-    
-	
+    	
 	
 	/*background: #7ae298;*/
 	/* Old browsers */
@@ -59,7 +55,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    left: 830px;
+    left: 530px;
     top: 150px;
   }
   .wrapper1 cube h3{
@@ -375,7 +371,7 @@ section {
     color: #FFF;
     border-radius: 10px;
     padding: 1px 40px;
-	margin-top: 0px;
+	margin-top: 4%;
     margin-left: 20px;
 	
 	
@@ -489,4 +485,89 @@ section {
 		width: 100%;
 		height: auto;
 	}
+}
+
+/* ------------*/
+@media (max-width: 480px) {
+	.wrapper1 .cube {
+		position: absolute;
+		font-family: 'Oswald', sans-serif;
+		width: 290px;
+		height: 250px;
+		box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
+		/*background-color: ;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 80px;
+		top: 90px;
+	  }
+	  .wrapper1 cube h3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .container h2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+
+
+}
+
+@media (max-width: 780px) {
+	.wrapper1 .cube {
+		position: absolute;
+		font-family: 'Oswald', sans-serif;
+		width: 250px;
+		height: 250px;
+		box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
+		/*background-color: ;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 180px;
+		top: 90px;
+	  }
+	  .wrapper1 cube h3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .container h2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+
+
+}
+
+@media (max-width: 1080px) {
+	.cube {
+		position: absolute;
+		font-family: 'Oswald', sans-serif;
+		width: 250px;
+		height: 250px;
+		box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
+		/*background-color: ;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 300px;
+		top: 110px;
+	  }
+	  .wrapper1 cube h3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .container h2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+
+
 }
