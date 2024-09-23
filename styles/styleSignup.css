@@ -11,6 +11,7 @@ https://blog.hubspot.com/website/css-animation-examples*/
 /*--ANIMACION 1 LOGIN--*/
 body {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	/*position: relative;*/
@@ -23,27 +24,9 @@ body {
 
 /*ANIMACION2 SIGNUP*/
 
-  
 .wrapper1 {
-	/*display: flex;
-    justify-content: center;
-    align-items: center;
-    display: block;
-    position: absolute;
-	/*flex-direction: row;*/
-	/*width: 100vw;*/
 	height: 100vh;
-    	
-	
-	/*background: #7ae298;*/
-	/* Old browsers */
-	/*
-	background: -moz-linear-gradient(45deg, #7ae298 0%, #9af282 100%);
-	/* FF3.6-15 */ /*
-	background: -webkit-linear-gradient(45deg, #7ae298 0%, #9af282 100%);
-	/* Chrome10-25,Safari5.1-6 *//*
-	background: linear-gradient(45deg, #7ae298 0%, #9af282 100%);*/
-  }
+    }
   
   .cube {
 	position: absolute;
@@ -51,21 +34,15 @@ body {
 	width: 250px;
 	height: 250px;
 	box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
-	/*background-color: ;*/
+	/*background-color: red;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    left: 530px;
-    top: 150px;
+    left: 33.5%;
+    top: 20%;
   }
-  .wrapper1 cube h3{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  
+  /* COLOR HORMIGA MOVIMIENTO*/
   .ants {
-
     fill: #FFF;
 	/*fill: black;*/
 	width: 15px;
@@ -327,7 +304,7 @@ body {
 
 /*FOOTER*/
 
-	
+/*	
 	a {
 		&,
 		&:hover,
@@ -335,7 +312,7 @@ body {
 		&:visited {
 			color: #c6c6c6;
 		}
-	}
+	}*/
 
 
 
@@ -354,17 +331,17 @@ body{
     
 	
 }
-
+/*
 section {
     margin-top: 0px;
     margin-bottom: 200px;
-}
+}*/
 
 	
 .container{
-    width: 400px;
-	
-	background: transparent;
+	margin-right: 20%;
+	margin-top: 2%;
+	margin-bottom: 13%;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(0.9px); /*transparencia*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -372,22 +349,25 @@ section {
     border-radius: 10px;
     padding: 1px 40px;
 	margin-top: 4%;
-    margin-left: 20px;
+    margin-left: 16%;
 	
 	
 }
+h2{
+	align-items: center
+}
 
-.container h1   h2 section{
-    font-size: 36px;
+.container h2{
+    font-size: 30px;
     text-align: center;
 	
 }
 
 .container .input-box{
     position: relative; /*----*/
-    width: 100%x;
-    height: 50px;
-    margin: 30px 0;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
 }
 
 .input-box input{
@@ -402,8 +382,24 @@ section {
     color: #FFF;
     padding: 20px 45px 20px 20px;
 }
+.input-box-s{
+	width: 50%;
+	height: 80%;
+	/*background-color: #0817eb;*/
+	border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+	font-size: 16px;
+	background-color: #FFF;
+	color: #FFF;
+	text-align: center;
+	padding: 5px 10px;
+	margin: auto;
+	outline: none;
+	/*border: none;*/
+}
+
 .reg{
-    font-size: 16px;
+    font-size: 18px;
     color: #0817eb;
     font-weight: 400;
 }
@@ -472,7 +468,7 @@ section {
 .register-link p a:hover{
     text-decoration: underline;
 }
-
+/*
 .container video{
 	position:relative;
 	background: transparent;
@@ -485,27 +481,58 @@ section {
 		width: 100%;
 		height: auto;
 	}
-}
+}*/
+
 
 /* ------------*/
-@media (max-width: 480px) {
+/* ------------*/
+@media (min-device-width: 320px) and (max-device-width: 480px){
+	.container{
+		margin: 1%;
+		margin-left: 1%;
+	}
+}
+
+ 
+@media (min-device-width: 481px) and (max-device-width: 768px){
+}
+
+@media (max-width: 481px) {
 	.wrapper1 .cube {
 		position: absolute;
-		font-family: 'Oswald', sans-serif;
+		font-family: sans-serif;
 		width: 290px;
 		height: 250px;
 		box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
-		/*background-color: ;*/
+		/*background-color: red;*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		left: 80px;
-		top: 90px;
+		margin-left: -8%;
+		margin-right: 8%;
+		margin-bottom: 10%;
+		margin-top: -30%;
 	  }
-	  .wrapper1 cube h3{
+	  .cube{
+		margin-left: -25%;
+		
+	  }
+	  .input-box{
+		font-size: 2px;
+	  }
+	  .wrapper1 h3{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	  }
+
+
+
+	  .container{
+		/*background-color: pink;*/
+		width: 90%;
+		/*height: 40%;*/
+		margin-bottom: 8%;
 	  }
 	  .container h2{
 		display: flex;
@@ -523,40 +550,12 @@ section {
 		width: 250px;
 		height: 250px;
 		box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
-		/*background-color: ;*/
+		/*background-color:red;*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		left: 180px;
-		top: 90px;
-	  }
-	  .wrapper1 cube h3{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	  }
-	  .container h2{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	  }
-
-
-}
-
-@media (max-width: 1080px) {
-	.cube {
-		position: absolute;
-		font-family: 'Oswald', sans-serif;
-		width: 250px;
-		height: 250px;
-		box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
-		/*background-color: ;*/
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		left: 300px;
-		top: 110px;
+		left: 27%;
+		top: 20%;
 	  }
 	  .wrapper1 cube h3{
 		display: flex;

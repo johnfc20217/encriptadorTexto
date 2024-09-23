@@ -13,31 +13,27 @@
 
 <!-- -->
 
-    <div class="container">
-        
-        <video  autoplay loop muted plays-inline>
-            <!-- <source src="./video/ballena.mp4" type="video/mp4"-->
-        </video>
+    <div class="container">        
         <form id="loginForm">
             <h1>Login</h1>
 
             <div class="input-box">
-                <input 
+                <i class="bx bxs-user"></i> <!--ICONO-->
+                    <input                 
                     type="email" 
                     id="email"
                     placeholder="Email" 
                     required 
                     autofocus>
-                    <i class="bx bxs-user"></i>
-            </div>  
+             </div>  
 
             <div class="input-box">
+                <i class='bx bxs-lock-alt'></i>  
                 <input 
                     type="password" 
                     id="password"
                     placeholder="Password" 
-                    required>
-                    <i class='bx bxs-lock-alt'></i>      
+                    required>         
             </div>
 
             <div class="remember-forgot">
@@ -48,41 +44,19 @@
                 <a href="signup.html">Forgot password </a>
             </div>
 
-            <button class="btn" 
-                type="submit" 
-                onclick="login()">Login
-            </button>
+            <div class="bt">
+                <button class="btn" 
+                    type="submit" 
+                    onclick="login()">Login
+                </button>
+            </div>
 
             <div class="register-link">
                 <p>Don't have an account ? <a href="signup.html">Register</a></p>
-            
+            </div>
         </form>
     </div>
-    
-    </div>
-    
-
-    <!--ANIMACION-->
-    <div class="animation-container">
-        <div class="lightning-container">
-            <div class="lightning white"></div>
-            <div class="lightning red"></div>
-        </div>
-        <div class="boom-container">
-            <div class="shape circle big white"></div>
-            <div class="shape circle white"></div>
-            <div class="shape triangle big yellow"></div>
-            <div class="shape disc white"></div>
-            <div class="shape triangle blue"></div>
-        </div>
-        <div class="boom-container second">
-            <div class="shape circle big white"></div>
-            <div class="shape circle white"></div>
-            <div class="shape disc white"></div>
-            <div class="shape triangle blue"></div>
-        </div>
-    </div>
-    
+        
     <script src="./js/login.js"></script>
 </body>
 </html>
